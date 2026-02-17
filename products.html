@@ -34,7 +34,16 @@
         <!-- Right Side -->
         <div class="flex items-center gap-5">
           <!-- Cart -->
-          <i class="fa-solid fa-cart-shopping text-2xl text-gray-700"></i>
+          <!-- <i class="fa-solid fa-cart-shopping text-2xl text-gray-700"></i> -->
+           <div class="relative cursor-pointer" onclick="openCart()">
+  <i class="fa-solid fa-cart-shopping text-2xl text-gray-700"></i>
+
+  <span id="cartCount"
+        class="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+    0
+  </span>
+</div>
+
 
           <!-- Hamburger Icon -->
           <button id="menuBtn" class="md:hidden text-2xl">
@@ -78,6 +87,9 @@
             class="absolute top-5 right-8 text-2xl font-bold text-gray-600">
       ✕
     </button>
+     <div id="cartItems" class="space-y-4 max-h-[60vh] overflow-y-auto"></div>
+
+  
 
     <!-- Modal Content -->
     <div id="modalContent"></div>
