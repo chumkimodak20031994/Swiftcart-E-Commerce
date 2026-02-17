@@ -31,7 +31,15 @@
       <div class="flex items-center gap-5">
 
         <!-- Cart -->
-        <i class="fa-solid fa-cart-shopping text-2xl text-gray-700"></i>
+        <!-- <i class="fa-solid fa-cart-shopping text-2xl text-gray-700"></i> -->
+          <div class="relative cursor-pointer" onclick="openCart()">
+  <i class="fa-solid fa-cart-shopping text-2xl text-gray-700"></i>
+
+  <span id="cart-count"
+        class="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+    0
+  </span>
+</div>
 
         <!-- Hamburger Icon -->
         <button id="menuBtn" class="md:hidden text-2xl">
@@ -144,6 +152,92 @@
   </div>
 
 </section>
+<section class="max-w-6xl mx-auto py-10">
+  <h2 class="font-bold text-3xl md:text-6xl mb-6 font-bold text-gray-900">Trending Now</h2>
+ 
+  <!-- <div id="trendingContainer" class="grid md:grid-cols-3 gap-6"></div> -->
+
+   <div id="trendingContainer" class="grid md:grid-cols-3 gap-6"></div>
+    <!-- <div id="trendingContainer"></div> -->
+
+
+</section>
+<footer class="bg-[#1e293b] text-gray-300 mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+
+    <!-- Logo + About -->
+    <div>
+      <h2 class="text-2xl font-bold text-purple-400 mb-3">SwiftCart</h2>
+      <p class="text-sm text-gray-400 leading-6">
+        Your one-stop shop for all your fashion and lifestyle needs. Quality
+        products, fast delivery, and excellent support.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="font-semibold text-white mb-4">QUICK LINKS</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white">Home</a></li>
+        <li><a href="#" class="hover:text-white">Products</a></li>
+        <li><a href="#" class="hover:text-white">About</a></li>
+        <li><a href="#" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h3 class="font-semibold text-white mb-4">SUPPORT</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white">FAQ</a></li>
+        <li><a href="#" class="hover:text-white">Shipping</a></li>
+        <li><a href="#" class="hover:text-white">Returns</a></li>
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="font-semibold text-white mb-4">SUBSCRIBE TO OUR NEWSLETTER</h3>
+      <p class="text-sm text-gray-400 mb-4">
+        The latest news, articles, and resources, sent to your inbox weekly.
+      </p>
+
+      <div class="flex">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="px-3 py-2 rounded-l bg-gray-800 border border-gray-700 text-sm focus:outline-none w-full"
+        />
+        <button
+          class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-r text-white text-sm">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-gray-700 mt-6">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+      <p class="text-sm text-gray-400">
+        © 2025 SwiftCart, Inc. All rights reserved.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 text-gray-400 text-lg">
+        <i class="fa-brands fa-facebook hover:text-white cursor-pointer"></i>
+        <i class="fa-brands fa-twitter hover:text-white cursor-pointer"></i>
+        <i class="fa-brands fa-instagram hover:text-white cursor-pointer"></i>
+        <i class="fa-brands fa-linkedin hover:text-white cursor-pointer"></i>
+        <i class="fa-regular fa-envelope hover:text-white cursor-pointer"></i>
+      </div>
+
+    </div>
+  </div>
+</footer>
 
 
     <script src="./index.js"></script>
