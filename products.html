@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style/index.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></link>
+  </head>
+  <body>
+    <nav id="header" class="bg-white shadow-md px-16 py-6">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <h2 class="text-3xl font-bold text-blue-600">SwiftCart</h2>
+
+        <!-- Desktop Menu -->
+        <ul id="navLinks" class="hidden md:flex gap-x-8 text-lg font-semibold">
+          <li id="home" class="cursor-pointer hover:text-blue-600">
+            <a href="index.html">Home</a>
+          </li>
+          <li id="products" class="cursor-pointer hover:text-blue-600">
+            <a href="products.html" class="cursor-pointer hover:text-blue-600">
+              Products
+            </a>
+          </li>
+
+          <li id="about" class="cursor-pointer hover:text-blue-600">About</li>
+          <li id="contact" class="cursor-pointer hover:text-blue-600">
+            Contact
+          </li>
+        </ul>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-5">
+          <!-- Cart -->
+          <i class="fa-solid fa-cart-shopping text-2xl text-gray-700"></i>
+
+          <!-- Hamburger Icon -->
+          <button id="menuBtn" class="md:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobileMenu"
+        class="hidden flex-col gap-4 mt-5 text-lg font-semibold md:hidden"
+      >
+        <li class="cursor-pointer hover:text-blue-600">Home</li>
+        <li class="cursor-pointer hover:text-blue-600">Products</li>
+        <li class="cursor-pointer hover:text-blue-600">About</li>
+        <li class="cursor-pointer hover:text-blue-600">Contact</li>
+      </ul>
+    </nav>
+    <h1>This is product page</h1>
+    <script src="./index.js"></script>
+  </body>
+</html>

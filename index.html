@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style/index.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></link>
+  </head>
+  <body>
+    <nav id="header" class="bg-white shadow-md px-16 py-6">
+    <div class="flex justify-between items-center">
+
+      <!-- Logo -->
+      <h2 class="text-3xl font-bold text-blue-600">SwiftCart</h2>
+
+      <!-- Desktop Menu -->
+      <ul id="navLinks" class="hidden md:flex gap-x-8 text-lg font-semibold">
+        <li id="home"class="cursor-pointer hover:text-blue-600"><a href="index.html">Home</a></li>
+        <li id="products" class= "cursor-pointer hover:text-blue-600"><a href="products.html" class="cursor-pointer hover:text-blue-600">
+    Products
+  </a></li>
+  
+
+        <li id="about" class="cursor-pointer hover:text-blue-600">About</li>
+        <li id="contact" class="cursor-pointer hover:text-blue-600">Contact</li>
+      </ul>
+
+      <!-- Right Side -->
+      <div class="flex items-center gap-5">
+
+        <!-- Cart -->
+        <i class="fa-solid fa-cart-shopping text-2xl text-gray-700"></i>
+
+        <!-- Hamburger Icon -->
+        <button id="menuBtn" class="md:hidden text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobileMenu" class="hidden flex-col gap-4 mt-5 text-lg font-semibold md:hidden">
+      <li class="cursor-pointer hover:text-blue-600">Home</li>
+      <li class="cursor-pointer hover:text-blue-600">Products</li>
+      <li class="cursor-pointer hover:text-blue-600">About</li>
+      <li class="cursor-pointer hover:text-blue-600">Contact</li>
+    </ul>
+
+  </nav>
+<!-- Banner SEction  -->
+ <section class="relative h-[75vh] flex items-center justify-center">
+  <div class="absolute inset-0">
+    <img class="items-center w-full h-full" src="./Assets/banner-image.png"/>
+  </div>
+  <div class="relative">
+    <h1 class="font-bold text-3xl md:text-6xl mb-6 text-white">   Best Collection For You</h1>
+      <p class="text-lg md:text-2xl mb-8 text-white items-center max-w-3xl">
+      Discover the latest trends in fashion, electronics,
+       and more.
+      Shop with confidence and style at SwiftCart.
+    </p>
+     <button class="text-white bg-sky-600  px-8 py-4 rounded-lg text-2xl font-semibold item-left ">
+      Shop Now
+    </button>
+  </div>
+   
+ </section>
+ <!-- Why Choose Us -->
+  
+<section class="bg-gray-100 py-20">
+
+  <div class=" mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 class="font-bold text-3xl md:text-6xl mb-6 font-bold text-gray-900">
+      Why Choose Us
+    </h2>
+
+    <p class="text-gray-500 text-lg md:text-3xl mb-16">
+      We provide the best shopping experience with top-notch services.
+    </p>
+
+    <!-- Features Grid -->
+   <div class="mx-auto max-w-7xl">
+     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 content-around">
+      <div class=" relative bg-white p-8 rounded-xl shadow hover:shadow-lg transition ">
+        <div class=" absolute -top-7 left-6;l':'
+        ' w-14 h-14 mx-auto mb-6 flex items-center justify-center justify-items-start bg-indigo-100 text-indigo-600 rounded-lg text-2xl">
+          <i class="fa-solid fa-truck "></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-left mt-4">Fast Delivery</h3>
+        <p class="text-gray-500 text-left">
+          Get your orders delivered to your doorstep quickly and efficiently.
+        </p>
+      </div>
+
+    <div class="relative bg-white p-8 pt-12 rounded-xl shadow hover:shadow-lg transition">
+
+  <div class="absolute -top-7 left-6 w-14 h-14 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-lg text-2xl shadow">
+    <i class="fa-solid fa-headset"></i>
+  </div>
+
+  <h3 class="text-xl font-semibold mb-3 text-left">24/7 Support</h3>
+
+  <p class="text-gray-500 text-left">
+    Our support team is available around the clock to assist you.
+  </p>
+
+</div>
+<div class="relative bg-white p-8 pt-12 rounded-xl shadow hover:shadow-lg transition">
+
+  <div class="absolute -top-7 left-6 w-14 h-14 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-lg text-2xl shadow">
+    <i class="fa-solid fa-shield-halved"></i>
+  </div>
+
+  <h3 class="text-xl font-semibold mb-3 text-left">Secure Payment</h3>
+
+  <p class="text-gray-500 text-left">
+    Experience safe and secure transactions with our encrypted systems.
+  </p>
+
+</div>
+<div class="relative bg-white p-8 pt-12 rounded-xl shadow hover:shadow-lg transition">
+
+  <div class="absolute -top-7 left-6 w-14 h-14 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-lg text-2xl shadow">
+    <i class="fa-solid fa-rotate"></i>
+  </div>
+
+  <h3 class="text-xl font-semibold mb-3 text-left">Easy Returns</h3>
+
+  <p class="text-gray-500 text-left">
+    Not satisfied? Return your products easily within 30 days.
+  </p>
+
+</div>
+
+
+    </div>
+   </div>
+
+  </div>
+
+</section>
+<section>
+
+</section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
