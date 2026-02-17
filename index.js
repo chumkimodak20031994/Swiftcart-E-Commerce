@@ -13,6 +13,17 @@ navLinks.forEach((link) => {
     link.classList.add("text-blue-600", "font-bold", "border-b-2");
   }
 });
+// localStorage
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartCount = document.getElementById("cartCount");
+const cartItems = document.getElementById("cartItems");
+function updateCartCount() {
+  cartCount.innerText = cart.length;
+}
+
+updateCartCount();
+
 // loadCategories
 const categoryContainer = document.getElementById("categoryContainer");
 const productContainer = document.getElementById("productContainer");
