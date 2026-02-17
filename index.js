@@ -48,7 +48,7 @@ function addToCart(id) {
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCartCount();
 
-  alert("Added to Cart ✅");
+  alert("Added to Cart");
 }
 
 // ================= CATEGORY + PRODUCT =================
@@ -86,14 +86,15 @@ function createCategoryBtn(category) {
     "px-4 py-2 rounded-full border border-gray-300 bg-white text-black hover:bg-blue-500 hover:text-white capitalize";
 
   btn.onclick = () => {
-    // Reset styles
     document.querySelectorAll("#categoryContainer button").forEach((b) => {
       b.classList.remove("bg-blue-600", "text-white");
       b.classList.add("bg-white", "text-black");
     });
 
+    btn.classList.remove("bg-white", "text-black");
     btn.classList.add("bg-blue-600", "text-white");
 
+    // Load products
     if (category === "all") loadProducts();
     else loadProductsByCategory(category);
   };
@@ -192,9 +193,7 @@ async function loadProductDetails(id) {
 
         <p class="text-3xl font-bold text-blue-600 mb-2">$${product.price}</p>
 
-        <p class="text-yellow-500 mb-6">
-          ⭐ ${product.rating.rate} (${product.rating.count})
-        </p>
+      <p class="text-yellow-500 text-sm gap-1"> <i class="fa-solid fa-star text-yellow-500"></i> ${product.rating.rate} (${product.rating.count}) </p>
 
         <div class="flex gap-2">
           <button class="flex-1 border rounded py-2">Buy Now</button>
@@ -227,9 +226,7 @@ function displayProducts(products) {
             ${product.category}
           </span>
 
-          <p class="text-yellow-500 text-sm">
-            ⭐ ${product.rating.rate}
-          </p>
+      <p class="text-yellow-500 text-sm gap-1"> <i class="fa-solid fa-star text-yellow-500"></i> ${product.rating.rate} (${product.rating.count}) </p>
         </div>
 
         <h3 class="font-semibold mt-2 text-sm">
